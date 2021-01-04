@@ -1,0 +1,97 @@
+<div id="wrapper">
+    <div id="lcol">
+        <header>
+            <img src="assets/logo.png" alt="" style="width:150px;float:left;margin:5px;" />
+        </header>
+        
+        
+        <div class="art sart">
+            <h6>&lsquo;{{ news[1].source.name }}&rsquo;</h6>
+            <img [src]="news[1].urlToImage" alt="" style="width:384px" />
+            <a [href]="news[1].url"><h3>{{ news[1].title }}</h3></a>
+            <span class="tlighter">{{ news[1].author }}</span>
+            <p>
+                {{ news[1].description }}
+            </p>
+        </div>
+        
+        <div class="art sart">
+            <h6>&lsquo;{{ news[2].source.name }}&rsquo;</h6>
+            <img [src]="news[2].urlToImage" alt="" style="width:384px" />
+            <a [href]="news[2].url"><h3>{{ news[2].title }}</h3></a>
+            <span class="tlighter">{{ news[2].author }}</span>
+            <p>
+                {{ news[2].description }}
+            </p>
+        </div>
+        
+    </div>
+    <div id="rcol">
+        <div id="hright">
+            <nav>
+                <ul id="tnlist">
+                    <li><a routerLink="/">HOME</a></li>
+                    <li><a routerLink="/business">BUSINESS</a></li>
+                    <li><a routerLink="/entertainment">ENTERTAINMENT</a></li>
+                    <li><a routerLink="/general">GENERAL</a></li>
+                    <li><a routerLink="/health">HEALTH</a></li>
+                    <li><a routerLink="/science">SCIENCE</a></li>
+                    <li><a routerLink="/sports">SPORTS</a></li>
+                    <li><a routerLink="/technology">TECHNOLOGY</a></li>
+                </ul>
+            </nav>
+            <div id="mart" class="art">
+                <h6>&lsquo;{{ news[0].source.name }}&rsquo;</h6>
+                <img [src]="news[0].urlToImage" alt="" style="width:546px" />
+                <a [href]="news[0].url"><h1>{{ news[0].title }}</h1></a>
+                <span class="tlighter">{{ news[0].author }}</span>
+                <p>
+                    {{ news[0].description }}
+                </p>
+                <br /><br />
+            </div>
+        </div>
+        <div id="csec">
+            <div id="lcsec">
+                <h3 style="color:#444444">MOST POPULAR</h3>
+                <div class="mdart">
+                    <h6>&lsquo;{{ news[3].source.name }}&rsquo;</h6>
+                    <a [href]="news[3].url"><h2>{{ news[3].title }}</h2></a>
+                    <span class="tlighter">{{ news[3].author }}</span>
+                </div>
+                <div class="mdart">
+                    <h6>&lsquo;{{ news[4].source.name }}&rsquo;</h6>
+                    <a [href]="news[4].url"><h2>{{ news[4].title }}</h2></a>
+                    <span class="tlighter">{{ news[4].author }}</span>
+                </div>
+                <div class="mdart">
+                    <h6>&lsquo;{{ news[5].source.name }}&rsquo;</h6>
+                    <a [href]="news[5].url"><h2>{{ news[5].title }}</h2></a>
+                    <span class="tlighter">{{ news[5].author }}</span>
+                </div>
+            </div>
+            <div id="rcsec">
+                <h3 style="color:#444444">UPCOMING</h3>
+                <div class="uart">
+                    <a [href]="news[6].url"><h3>{{ news[6].title }}</h3></a>
+                    <span class="tlighter">{{ news[6].author }}</span>
+                </div>
+                <div class="uart">
+                    <a [href]="news[7].url"><h3>{{ news[7].title }}</h3></a>
+                    <span class="tlighter">{{ news[7].author }}</span>
+                </div>
+                <div class="uart">
+                    <a [href]="news[8].url"><h3>{{ news[8].title }}</h3></a>
+                    <span class="tlighter">{{ news[8].author }}</span>
+                </div>
+                <div class="uart">
+                    <a [href]="news[9].url"><h3>{{ news[9].title }}</h3></a>
+                    <span class="tlighter">{{ news[9].author }}</span>
+                </div>
+            </div>
+            <div class="fix"></div>
+        </div>
+    </div>
+    <div class="fix"></div>
+    <div id="cnote">BIGG Media &copy; Copyright 2020</div>
+</div>
